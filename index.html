@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Your Name — Portfolio</title>
-    <meta name="description" content="One‑page portfolio for Your Name: projects, experience, and contact links." />
+    <title>Ady Alhamdan — Portfolio</title>
+    <meta name="description" content="One‑page portfolio for Ady Alhamdan: experience, selected projects, and contact." />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Your Name — Portfolio" />
-    <meta property="og:description" content="Projects, experience, and contact links." />
+    <meta property="og:title" content="Ady Alhamdan — Portfolio" />
+    <meta property="og:description" content="Embedded & CV engineer — PLC/FPGA, STM32, Python/C++." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://dummyimage.com/1200x630/1f2937/e5e7eb.png&text=Your+Name" />
+    <meta property="og:image" content="https://dummyimage.com/1200x630/1f2937/e5e7eb.png&text=Ady+Alhamdan" />
 
     <!-- Tailwind Play CDN (simple, no build step) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,23 +42,22 @@
       }
     </script>
     <style>
-      /* subtle selection */
-      ::selection { background: #a78bfa33; }
+      ::selection { background: #34d39933; }
     </style>
   </head>
 
-  <body class="font-sans bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100">
+  <body class="font-sans bg-gradient-to-br from-slate-50 to-emerald-50 dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100">
     <!-- Shell -->
     <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/40 dark:supports-[backdrop-filter]:bg-slate-900/40 border-b border-slate-200/60 dark:border-slate-800/60">
       <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <a href="#home" class="text-sm font-semibold tracking-wide">Your Name</a>
+        <a href="#home" class="text-sm font-semibold tracking-wide">Ady Alhamdan</a>
         <nav class="hidden gap-6 md:flex text-sm">
-          <a href="#projects" class="hover:opacity-80">Projects</a>
           <a href="#experience" class="hover:opacity-80">Experience</a>
+          <a href="#projects" class="hover:opacity-80">Projects</a>
           <a href="#contact" class="hover:opacity-80">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a href="#" id="resumeLink" class="text-sm px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700/60 hover:bg-white/60 hover:dark:bg-slate-800/60 transition">Resume</a>
+          <a href="resume.pdf" id="resumeLink" class="text-sm px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700/60 hover:bg-white/60 hover:dark:bg-slate-800/60 transition">Resume</a>
           <button aria-label="Toggle theme" onclick="toggleTheme()" class="rounded-xl border border-slate-300/60 dark:border-slate-700/60 px-2 py-1 text-xs hover:bg-white/60 hover:dark:bg-slate-800/60 transition">🌙/☀️</button>
         </div>
       </div>
@@ -69,24 +68,24 @@
       <div class="grid md:grid-cols-[1.1fr,0.9fr] items-center gap-10">
         <div>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Portfolio</p>
-          <h1 class="mt-3 text-4xl md:text-5xl font-bold leading-tight">Hi, I’m <span class="text-indigo-600 dark:text-indigo-400">Your Name</span>.<br class="hidden md:block"> I build useful things.</h1>
-          <p class="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-prose">One‑sentence value prop. For example: “Embedded + ML engineer shipping fast, reliable systems across firmware, computer vision, and FPGA.” Keep it short and specific.</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-bold leading-tight">Hi, I’m <span class="text-emerald-600 dark:text-emerald-400">Ady</span>.<br class="hidden md:block"> 3rd-year Computer Engineering @ UWaterloo.</h1>
+          <p class="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-prose">I focus on embedded software and computer vision. Outside of work I bike, play soccer, and play music!</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#projects" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 bg-indigo-600 text-white hover:opacity-90 transition">
-              <span>See Projects</span>
+            <a href="#experience" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 bg-emerald-600 text-white hover:opacity-90 transition">
+              <span>See Experience</span>
             </a>
             <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 border border-slate-300/70 dark:border-slate-700/60 hover:bg-white/60 hover:dark:bg-slate-800/60 transition">
               <span>Contact</span>
             </a>
           </div>
           <ul class="mt-6 flex items-center gap-4 text-slate-500 dark:text-slate-400">
-            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://github.com/yourhandle" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.78-1.34-1.78-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.13 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.63.24 2.83.12 3.13.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.82.57A12 12 0 0 0 12 .5Z"/></svg> GitHub</a></li>
-            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.33V9h3.41v1.56h.05c.48-.91 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45Z"/></svg> LinkedIn</a></li>
-            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="mailto:you@example.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.63-.5 6.72 5.04a1 1 0 0 0 1.22 0L19.28 6H4.63Z"/></svg> Email</a></li>
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://github.com/Ady-A" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.78-1.34-1.78-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.13 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.63.24 2.83.12 3.13.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.82.57A12 12 0 0 0 12 .5Z"/></svg> GitHub</a></li>
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://www.linkedin.com/in/ady-alhamdan" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.33V9h3.41v1.56h.05c.48-.91 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45Z"/></svg> LinkedIn</a></li>
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="mailto:a2alhamd@uwaterloo.ca" aria-label="Email Ady"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.63-.5 6.72 5.04a1 1 0 0 0 1.22 0L19.28 6H4.63Z"/></svg> Email</a></li>
           </ul>
         </div>
         <div class="relative">
-          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-indigo-500 via-violet-500 to-sky-500 p-[2px] shadow-2xl">
+          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 p-[2px] shadow-2xl">
             <div class="h-full w-full rounded-[calc(1.5rem-2px)] bg-white/80 dark:bg-slate-900/80 backdrop-blur flex items-center justify-center">
               <!-- Replace with your headshot or graphic -->
               <span class="text-slate-600 dark:text-slate-300">Add a photo here</span>
@@ -96,7 +95,143 @@
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- EXPERIENCE FIRST -->
+    <section id="experience" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold">Experience</h2>
+      <div class="mt-6 space-y-4">
+        <!-- onsemi 2025 -->
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Firmware Engineering Intern · onsemi</h3>
+              <p class="text-sm text-slate-500">May–Aug 2025</p>
+            </div>
+            <a href="https://www.onsemi.com/" target="_blank" class="text-sm underline underline-offset-4">Company</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Integrated <span class="font-medium">Zephyr RTOS</span> with an IP driver platform (UART, PWM, I²C, GPIO, GPT, DMA) by implementing adaptation layers for deterministic HW/SW communication.</li>
+            <li>Wrote unit tests using Zephyr’s <span class="font-medium">ztest</span> to validate driver bring‑up and prevent regressions in a real‑time environment.</li>
+            <li>Designed a <span class="font-medium">sensorless trapezoidal BLDC motor controller</span> in Zephyr using six PWM channels; tuned timing and commutation for stable startup and speed control.</li>
+            <li>Validated bring‑up on <span class="font-medium">FPGA</span> and <span class="font-medium">STM32</span> targets with I²C test harnesses and logic‑analyzer traces; refined interrupt vs blocking APIs to improve robustness and concurrency.</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Zephyr RTOS</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">DeviceTree</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Kconfig</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">PWM</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">I²C</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">UART</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">DMA</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">STM32</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">FPGA</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Logic Analyzer</span>
+          </div>
+        </div>
+        <!-- Martinrea SWE 2024 F -->
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">AI Software Engineering Intern · Martinrea International Inc.</h3>
+              <p class="text-sm text-slate-500">Sep–Dec 2024</p>
+            </div>
+            <a href="https://www.martinrea.com/" target="_blank" class="text-sm underline underline-offset-4">Company</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Built a real‑time CV system on Linux for detection, tracking, and collision prediction in high‑throughput settings.</li>
+            <li>Implemented speed estimation, Kalman‑based trajectory prediction, and <span class="font-medium">homography + fisheye calibration</span>, improving localization accuracy by 40%.</li>
+            <li>Engineered a multiprocessing/multithreading pipeline with semaphores & shared memory ensuring zero frame drops; reduced inference latency <span class="font-medium">13&nbsp;ms → 3&nbsp;ms</span> via CUDA, TensorRT, PyTorch, and DLA.</li>
+            <li>Automated synthetic dataset generation in Unity for key‑point models, reducing manual labelling by ~70%.</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Python</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">OpenCV</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">YOLOv8</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">CUDA</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">TensorRT</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">PyTorch</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Linux</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Jetson Orin</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Unity</span>
+          </div>
+        </div>
+        <!-- Martinrea EE 2024 W -->
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Electrical Engineering Intern · Martinrea International Inc.</h3>
+              <p class="text-sm text-slate-500">Jan–Apr 2024 · Tillsonburg, ON</p>
+            </div>
+            <a href="https://www.martinrea.com/" target="_blank" class="text-sm underline underline-offset-4">Company</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Integrated a Raspberry Pi + relay interface for PLC ↔ external systems, boosting production by <span class="font-medium">3.3% Jobs/hour</span>.</li>
+            <li>Implemented a robot‑hold sequence with safety interlocks in PLC ladder logic, increasing throughput by <span class="font-medium">1.67% Jobs/hour</span>.</li>
+            <li>Built an HMI tracking system (Ladder Logic, Ignition Python, SQL, Vision screens) for comprehensive maintenance traceability.</li>
+            <li>Prototyped a Python linear‑programming optimizer for truck capacity, saving ~<span class="font-medium">$20k/yr</span>.</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">PLC</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Ladder Logic</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Ignition</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">SQL</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Python</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Raspberry Pi</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Safety Interlocks</span>
+          </div>
+        </div>
+        <!-- Ontario Ministry -->
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Application Developer (Co‑op) · Ontario Ministry of Public & Business Service Delivery</h3>
+              <p class="text-sm text-slate-500">May–Dec 2022; May–Aug 2023 · Toronto, ON</p>
+            </div>
+            <a href="https://www.ontario.ca/page/ministry-public-and-business-service-delivery-and-procurement" target="_blank" class="text-sm underline underline-offset-4">Ministry</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Rebuilt a tracking portal with <span class="font-medium">React</span> + <span class="font-medium">Node/Express</span> + <span class="font-medium">MongoDB</span> to replace manual status workflows.</li>
+            <li>Automated invoice reconciliation with <span class="font-medium">PowerApps</span> (+ AI) & <span class="font-medium">Power Automate</span>, streamlining approvals.</li>
+            <li>Automated edits across <span class="font-medium">6,000+ PDFs</span> using <span class="font-medium">Power Automate Desktop</span>, cutting manual effort by ~<span class="font-medium">70%</span>.</li>
+            <li>Modeled <span class="font-medium">Dataverse</span> schemas for onboarding interviews and scoring.</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">React</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Node</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Express</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">MongoDB</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">PowerApps</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Power Automate</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Dataverse</span>
+          </div>
+        </div>
+        <!-- UW Orbital -->
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Electrical Subteam Member · UW Orbital Design Team</h3>
+              <p class="text-sm text-slate-500">Sep 2023 – Dec 2023</p>
+            </div>
+            <a href="https://www.uworbital.com/" target="_blank" class="text-sm underline underline-offset-4">Team</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Researched ground‑station RF hardware (circulators, cavity filters, antennas, lightning protection) and cabling.</li>
+            <li>Drafted schematics for a <span class="font-medium">CC1120</span>‑based transceiver (SPI, power, RF front‑end) and designed BMS with <span class="font-medium">MAX17320</span>.</li>
+            <li>Validated boards using DMM, oscilloscope, and network analyzer (s‑parameters).</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">RF</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">CC1120</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">SPI</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">BMS</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">MAX17320</span>
+            <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Network Analyzer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <div class="flex items-end justify-between gap-4">
         <h2 class="text-2xl md:text-3xl font-semibold">Selected Projects</h2>
@@ -104,99 +239,114 @@
       </div>
 
       <div class="mt-6 grid gap-6 md:grid-cols-2">
-        <!-- Project Card 1 -->
+        <!-- Project: LLM Accelerator -->
         <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
           <div class="flex items-start justify-between gap-3">
-            <h3 class="text-lg font-semibold">Project Title One</h3>
-            <span class="text-xs px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">2025</span>
+            <h3 class="text-lg font-semibold">LLM Accelerator — SystemVerilog RTL</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Hardware</span>
           </div>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">One sentence on what it does + why it matters. Add a quantified result if you can.</p>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Integrated a self‑attention head with matrix multiply, <span class="font-medium">GELU</span>, and <span class="font-medium">LayerNorm</span> to build a BERT‑style accelerator; implemented MAC, GELU, accumulate units and a 2D systolic array for high‑throughput inference; added fixed‑point softmax and buffering for full pipeline.</p>
           <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
-            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Python</li>
-            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">OpenCV</li>
-            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">TensorRT</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">SystemVerilog</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">RTL</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Systolic Array</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">FPGA</li>
           </ul>
-          <div class="mt-4 flex gap-3 text-sm">
-            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">GitHub</a>
-            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">Demo</a>
-          </div>
         </article>
 
-        <!-- Project Card 2 -->
+        <!-- Project: Real-Time Executive -->
         <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
           <div class="flex items-start justify-between gap-3">
-            <h3 class="text-lg font-semibold">Project Title Two</h3>
-            <span class="text-xs px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">2025</span>
+            <h3 class="text-lg font-semibold">Real‑Time Executive (RTX) — C · ARM · STM32</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Firmware</span>
           </div>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Short description focused on impact and your role.</p>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Built a pre‑emptive multitasking executive with context switching, RTOS primitives, and an <span class="font-medium">EDF scheduler</span>; implemented a First‑Fit allocator and task APIs for deterministic execution on resource‑constrained MCUs.</p>
           <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
             <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</li>
-            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">RTOS</li>
             <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">STM32</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">RTOS</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">EDF</li>
+          </ul>
+        </article>
+
+        <!-- Project: FPGA Audio Player -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">FPGA Audio Player (Nios II)</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Embedded</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Real‑time .wav playback from microSD using FatFS on Altera FPGA; LCD UI and debounced controls; smooth stereo output without dropouts.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Nios II</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">FatFS</li>
+          </ul>
+        </article>
+
+        <!-- Project: STM32 Reservoir Controller -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">STM32 Water‑Reservoir Controller</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Firmware</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">PWM control for DC + servo motors with UART sensor I/O (HC‑SR04); robust signal integration and feedback loops.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">STM32</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">UART · PWM</li>
+          </ul>
+        </article>
+
+        <!-- Project: Linux Concurrency -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">Linux Producer–Consumer (IPC)</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-300/80 dark:text-emerald-300">Systems</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Multiprocess bounded‑buffer using System V shared memory & POSIX semaphores; cURL callbacks for streamed image segments; tuned buffer sizes for latency/throughput.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">IPC</li>
+          </ul>
+        </article>
+
+        <!-- Project: Page Turner -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">Music‑Sheet Auto Page‑Turner</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Hackathon</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Bluetooth‑connected app (MIT App Inventor) plus Arduino‑driven mechanics; algorithmic timing for page flips; smooth gear‑motor actuation.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Arduino</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Bluetooth</li>
           </ul>
           <div class="mt-4 flex gap-3 text-sm">
-            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">GitHub</a>
-            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">Write‑up</a>
+            <a class="underline underline-offset-4 hover:opacity-80" href="https://github.com/Ady-A/MakeUofT2023" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>
       </div>
-
-      <!-- Tiny note -->
-      <p class="mt-4 text-xs text-slate-500">Tip: keep 2–4 projects. Lead with outcomes (\u2193 latency, \u2191 throughput, etc.).</p>
+      <p class="mt-4 text-xs text-slate-500">Tip: tailor to the role — firmware/RTOS/FPGA vs CV/ML; lead with outcomes (↓ latency, ↑ throughput, reliability).</p>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h2 class="text-2xl md:text-3xl font-semibold">Experience</h2>
-      <div class="mt-6 space-y-4">
-        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <h3 class="font-semibold">Role · Company</h3>
-              <p class="text-sm text-slate-500">Location · Dates</p>
-            </div>
-            <a href="#" class="text-sm underline underline-offset-4">Link</a>
-          </div>
-          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
-            <li>Quantified impact bullet — e.g., Reduced inference latency from 13ms → 3ms using TensorRT. </li>
-            <li>One sentence describing your responsibility and stack.</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <h3 class="font-semibold">Role · Company</h3>
-              <p class="text-sm text-slate-500">Location · Dates</p>
-            </div>
-            <a href="#" class="text-sm underline underline-offset-4">Link</a>
-          </div>
-          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
-            <li>Unit-tested Zephyr drivers for UART/I2C/GPIO to ensure deterministic behavior.</li>
-            <li>Validated bring-up with logic analyzer; improved reliability & concurrency.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact" class="mx-auto max-w-6xl px-4 pb-20">
-      <div class="rounded-3xl bg-indigo-600 text-white p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+      <div class="rounded-3xl bg-emerald-600 text-white p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
         <div>
           <h2 class="text-2xl md:text-3xl font-semibold">Let’s build something great</h2>
           <p class="mt-1 text-white/90">Email me or say hi on LinkedIn. I read everything.</p>
         </div>
         <div class="flex gap-3">
-          <a href="mailto:you@example.com" class="rounded-2xl bg-white text-indigo-700 px-4 py-2.5 font-medium hover:opacity-90">Email</a>
-          <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" class="rounded-2xl ring-1 ring-inset ring-white/60 px-4 py-2.5 font-medium hover:bg-white/10">LinkedIn</a>
+          <a href="mailto:a2alhamd@uwaterloo.ca" class="rounded-2xl bg-white text-emerald-700 px-4 py-2.5 font-medium hover:opacity-90">Email</a>
+          <a href="https://www.linkedin.com/in/ady-alhamdan" target="_blank" rel="noopener" class="rounded-2xl ring-1 ring-inset ring-white/60 px-4 py-2.5 font-medium hover:bg-white/10">LinkedIn</a>
         </div>
       </div>
-      <p class="mt-6 text-center text-xs text-slate-500">© <span id="year"></span> Your Name</p>
+      <p class="mt-6 text-center text-xs text-slate-500">© <span id="year"></span> Ady Alhamdan</p>
     </section>
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-      // Optional: set your resume link once and forget it
-      document.getElementById('resumeLink').href = 'resume.pdf'; // put resume.pdf next to this file
+      document.getElementById('resumeLink').href = 'resume.pdf';
     </script>
 
     <!-- Minimal structured data for better previews -->
@@ -204,11 +354,12 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Your Name",
-        "url": "https://your-domain.com",
+        "name": "Ady Alhamdan",
+        "email": "a2alhamd@uwaterloo.ca",
+        "url": "https://ady-a.github.io/portfolio/",
         "sameAs": [
-          "https://www.linkedin.com/in/yourhandle",
-          "https://github.com/yourhandle"
+          "https://www.linkedin.com/in/ady-alhamdan",
+          "https://github.com/Ady-A"
         ]
       }
     </script>
