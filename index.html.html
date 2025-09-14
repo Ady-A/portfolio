@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="One‑page portfolio for Your Name: projects, experience, and contact links." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Your Name — Portfolio" />
+    <meta property="og:description" content="Projects, experience, and contact links." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dummyimage.com/1200x630/1f2937/e5e7eb.png&text=Your+Name" />
+
+    <!-- Tailwind Play CDN (simple, no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"] },
+          },
+        },
+        darkMode: 'class',
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      // Persisted dark-mode preference
+      const root = document.documentElement;
+      const stored = localStorage.getItem('theme');
+      if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.classList.add('dark');
+      }
+      function toggleTheme(){
+        root.classList.toggle('dark');
+        localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+      }
+    </script>
+    <style>
+      /* subtle selection */
+      ::selection { background: #a78bfa33; }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100">
+    <!-- Shell -->
+    <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/40 dark:supports-[backdrop-filter]:bg-slate-900/40 border-b border-slate-200/60 dark:border-slate-800/60">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="text-sm font-semibold tracking-wide">Your Name</a>
+        <nav class="hidden gap-6 md:flex text-sm">
+          <a href="#projects" class="hover:opacity-80">Projects</a>
+          <a href="#experience" class="hover:opacity-80">Experience</a>
+          <a href="#contact" class="hover:opacity-80">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#" id="resumeLink" class="text-sm px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700/60 hover:bg-white/60 hover:dark:bg-slate-800/60 transition">Resume</a>
+          <button aria-label="Toggle theme" onclick="toggleTheme()" class="rounded-xl border border-slate-300/60 dark:border-slate-700/60 px-2 py-1 text-xs hover:bg-white/60 hover:dark:bg-slate-800/60 transition">🌙/☀️</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="mx-auto max-w-6xl px-4 pt-16 pb-10 md:pt-24">
+      <div class="grid md:grid-cols-[1.1fr,0.9fr] items-center gap-10">
+        <div>
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Portfolio</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-bold leading-tight">Hi, I’m <span class="text-indigo-600 dark:text-indigo-400">Your Name</span>.<br class="hidden md:block"> I build useful things.</h1>
+          <p class="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-prose">One‑sentence value prop. For example: “Embedded + ML engineer shipping fast, reliable systems across firmware, computer vision, and FPGA.” Keep it short and specific.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 bg-indigo-600 text-white hover:opacity-90 transition">
+              <span>See Projects</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl px-4 py-2.5 border border-slate-300/70 dark:border-slate-700/60 hover:bg-white/60 hover:dark:bg-slate-800/60 transition">
+              <span>Contact</span>
+            </a>
+          </div>
+          <ul class="mt-6 flex items-center gap-4 text-slate-500 dark:text-slate-400">
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://github.com/yourhandle" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.78-1.34-1.78-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.13 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.63.24 2.83.12 3.13.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.38.81 1.12.81 2.26v3.35c0 .32.22.69.82.57A12 12 0 0 0 12 .5Z"/></svg> GitHub</a></li>
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.33V9h3.41v1.56h.05c.48-.91 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45Z"/></svg> LinkedIn</a></li>
+            <li><a class="hover:text-slate-700 dark:hover:text-white inline-flex items-center gap-2" href="mailto:you@example.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.63-.5 6.72 5.04a1 1 0 0 0 1.22 0L19.28 6H4.63Z"/></svg> Email</a></li>
+          </ul>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-indigo-500 via-violet-500 to-sky-500 p-[2px] shadow-2xl">
+            <div class="h-full w-full rounded-[calc(1.5rem-2px)] bg-white/80 dark:bg-slate-900/80 backdrop-blur flex items-center justify-center">
+              <!-- Replace with your headshot or graphic -->
+              <span class="text-slate-600 dark:text-slate-300">Add a photo here</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl md:text-3xl font-semibold">Selected Projects</h2>
+        <a href="#contact" class="text-sm underline-offset-4 hover:underline">Get in touch →</a>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <!-- Project Card 1 -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">Project Title One</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">2025</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">One sentence on what it does + why it matters. Add a quantified result if you can.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">Python</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">OpenCV</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">TensorRT</li>
+          </ul>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5 hover:shadow-xl transition">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-semibold">Project Title Two</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">2025</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Short description focused on impact and your role.</p>
+          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-500">
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">C</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">RTOS</li>
+            <li class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800/60">STM32</li>
+          </ul>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="underline underline-offset-4 hover:opacity-80" href="#" target="_blank" rel="noopener">Write‑up</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Tiny note -->
+      <p class="mt-4 text-xs text-slate-500">Tip: keep 2–4 projects. Lead with outcomes (\u2193 latency, \u2191 throughput, etc.).</p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold">Experience</h2>
+      <div class="mt-6 space-y-4">
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Role · Company</h3>
+              <p class="text-sm text-slate-500">Location · Dates</p>
+            </div>
+            <a href="#" class="text-sm underline underline-offset-4">Link</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Quantified impact bullet — e.g., Reduced inference latency from 13ms → 3ms using TensorRT. </li>
+            <li>One sentence describing your responsibility and stack.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Role · Company</h3>
+              <p class="text-sm text-slate-500">Location · Dates</p>
+            </div>
+            <a href="#" class="text-sm underline underline-offset-4">Link</a>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+            <li>Unit-tested Zephyr drivers for UART/I2C/GPIO to ensure deterministic behavior.</li>
+            <li>Validated bring-up with logic analyzer; improved reliability & concurrency.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mx-auto max-w-6xl px-4 pb-20">
+      <div class="rounded-3xl bg-indigo-600 text-white p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold">Let’s build something great</h2>
+          <p class="mt-1 text-white/90">Email me or say hi on LinkedIn. I read everything.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="mailto:you@example.com" class="rounded-2xl bg-white text-indigo-700 px-4 py-2.5 font-medium hover:opacity-90">Email</a>
+          <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" class="rounded-2xl ring-1 ring-inset ring-white/60 px-4 py-2.5 font-medium hover:bg-white/10">LinkedIn</a>
+        </div>
+      </div>
+      <p class="mt-6 text-center text-xs text-slate-500">© <span id="year"></span> Your Name</p>
+    </section>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Optional: set your resume link once and forget it
+      document.getElementById('resumeLink').href = 'resume.pdf'; // put resume.pdf next to this file
+    </script>
+
+    <!-- Minimal structured data for better previews -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "https://your-domain.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/yourhandle",
+          "https://github.com/yourhandle"
+        ]
+      }
+    </script>
+  </body>
+</html>
